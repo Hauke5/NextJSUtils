@@ -1,13 +1,13 @@
 /**
  * Server-side `authOptions`
  */
+import { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials'
 import Auth0Provider       from "next-auth/providers/auth0";
 import process             from 'process'
 import crypto              from 'crypto'
 import path                from 'path'
-import * as fs             from '../fileAPI/fsUtil'
-import { NextAuthOptions } from 'next-auth';
+import * as fs             from '@/lib/fileAPI/fsUtil'
 
 
 type CredentialData = Record<"username" | "password", string> | undefined
