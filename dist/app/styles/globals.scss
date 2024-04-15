@@ -1,0 +1,63 @@
+html {
+   height: 100%;  /* Fallback CSS for IE 4-6 and older browsers. Note: Without this setting, body below cannot achieve 100% height. */
+   height: 100vh; /* Overrides 100% height in modern HTML5 browsers and uses the viewport's height. Only works in modern HTML5 browsers */
+}
+// body {
+//    padding: 0 10px;
+//    margin: 0;
+//    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+//                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+//    height: auto;
+//    // min-height: 100%; /* Starts web page with 100% height. Fallback for IE 4-6 and older browsers */
+//    // min-height: 100vh;/* Starts web page with 100% height. Uses the viewport's height. Only works in modern HTML5 browsers */
+// }
+
+:root {
+   --app-height: 100%;
+}
+
+html,
+body {
+   padding: 0;
+   margin : 0;
+   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   font-size: 16px;
+   height: 100%;
+   width: 100%;
+   height: 100vh;
+   height: var(--app-height);
+   overflow:hidden;
+}
+
+div[data-nextjs-scroll-focus-boundary] {
+   height: 100%;
+}
+
+a {
+   color          : inherit;
+   text-decoration: none;
+   &:hover {
+      text-decoration: underline solid #00f;
+   }
+}
+
+* {
+   box-sizing: border-box;
+   margin    : 0;
+   padding   : 0;
+}
+
+button {
+   margin          : 0 10px;
+   padding         : 5px;
+   border-radius   : 5px;
+   color           : white;
+   background-color: #66f;
+   border          : none;
+   font-size       : 80%;
+}
+
+button:hover {
+   background-color: #88f;
+}
