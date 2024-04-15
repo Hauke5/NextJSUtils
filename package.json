@@ -1,6 +1,6 @@
 {
    "name": "@hauke5/nextjs-utils",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "shared resources for NextJS apps",
    "author": {
       "name": "hauke5",
@@ -19,7 +19,7 @@
    },
    "scripts": {},
    "dependencies": {
-      "@hauke/utils": "^1", 
+      "@hauke/utils": "^1",
       "next": "^14.2.0",
       "next-auth": "^4.24.7",
       "node": "^20.12.2",
