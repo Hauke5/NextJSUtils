@@ -1,0 +1,36 @@
+{
+   "name": "@hauke5/nextjs-utils",
+   "version": "1.0.0",
+   "description": "shared resources for NextJS apps",
+   "author": {
+      "name": "hauke5",
+      "email": "helpfulscripts@gmail.com"
+   },
+   "bin": {
+      "utils": "./dist/index.sh"
+   },
+   "files": [
+      "dist"
+   ],
+   "license": "MIT",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Hauke5/NextJSUtils.git"
+   },
+   "scripts": {},
+   "dependencies": {
+      "@hauke/utils": "^1", 
+      "next": "^14.2.0",
+      "next-auth": "^4.24.7",
+      "node": "^20.12.2",
+      "react": "^18.2.0",
+      "sass": "^1.75.0"
+   },
+   "devDependencies": {
+      "typescript": "^5",
+      "@types/node": "^20",
+      "@types/react": "^18.2.78",
+      "eslint": "^8",
+      "eslint-config-next": "14.2.1"
+   }
+}

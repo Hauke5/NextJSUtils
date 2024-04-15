@@ -1,0 +1,63 @@
+@use "../../styles/standardButton.scss" with (
+   $hoverBrightness:  0.9,
+);
+
+
+.signedIn {
+   height:initial;
+   width:min-content;
+   color: #888;
+   display:flex;
+   flex-flow: row nowrap;
+   align-items: center;
+   .session {
+      white-space: nowrap;
+      small {
+         display:flex;
+         flex-flow: column nowrap;
+         font-size: 9px;
+         margin-right: 5px;
+      }
+   }
+   .button {
+      @include standardButton.btnStyle();
+      display:flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      min-width: 30px;
+      margin: 0 10px 0 5px;
+      padding: 0 3px;
+      .signIn {
+         fill: #080;
+      }
+      .signOut {
+         fill: #800;
+      }
+   }
+   .role {
+      fill: #f66;
+      &.Admin {
+         fill: #6a6;
+      }
+      &.Owner {
+         fill: #88c;
+      }
+      &.Public {
+         fill: #aa4;
+      }
+   }
+   .user {
+      font-size: 110%;
+      color: #008;
+   }
+}
+
+.signIn {
+   display:flex;
+   width: 100%;
+   justify-content: center;
+   button {
+      margin-top: 100px;
+   }
+}
