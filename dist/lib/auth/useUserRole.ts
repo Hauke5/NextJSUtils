@@ -14,6 +14,10 @@ export enum Role {
 }
 
 
+export const defaultRole:RoleDesc = {
+   public: Role.Public
+}
+
 export interface RoleDesc {
    [user:string]: Role
 }
