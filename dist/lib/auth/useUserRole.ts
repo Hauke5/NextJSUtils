@@ -3,24 +3,7 @@ import { useEffect, useState }
                            from 'react'
 import { useSession }      from 'next-auth/react'
 import { useAppsContext }  from '@/lib/apps/useAppsContext'
-
-export const  ALL_USERS       = 'public'
-
-export enum Role {
-   Admin    = 'Admin',
-   Owner    = 'Owner',
-   Public   = 'Public',
-   Unknown  = 'Unknown',
-}
-
-
-export const defaultRole:RoleDesc = {
-   public: Role.Public
-}
-
-export interface RoleDesc {
-   [user:string]: Role
-}
+import { ALL_USERS, Role } from './types'
 
 /**
 * A hook to return the role of the current user. Roles are retrieved from a `<appKey/.roles.json` file . 

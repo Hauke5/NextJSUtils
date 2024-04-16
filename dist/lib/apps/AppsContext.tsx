@@ -2,8 +2,8 @@
 import { createContext }      from "react";
 import { AppDesc }            from "@/lib/apps/useAppDesc";
 import { ChildrenOnlyProps }  from "@/lib/apps/BaseProps";
-import { UpdateContext }      from "@/lib/hooks/";
-import { RoleDesc }           from "@/lib/auth/useUserRole";
+import { UpdateContext }      from "@/lib/hooks/useContextState";
+import { RoleDesc }           from "@/lib/auth/types";
 
 
 export type AppsContext =  {

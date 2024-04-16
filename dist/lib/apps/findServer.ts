@@ -3,7 +3,7 @@ import path          from 'path';
 import * as fs       from '@/lib/fileAPI/fsUtil'
 import { Log }       from '@/lib/utils';
 import { AppDesc }   from '@/lib/apps/useAppDesc';
-import { RoleDesc }  from '@/lib/auth/useUserRole';
+import { RoleDesc }  from '@/lib/auth/types';
 
 const log = Log(`appDescServer`)
 

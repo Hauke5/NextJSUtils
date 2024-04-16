@@ -2,7 +2,7 @@
 import * as fsNode            from 'fs'
 import path                   from 'path'
 import { getServerSession }   from 'next-auth';
-import { ALL_USERS }          from '@/lib/auth/useUserRole';
+import { ALL_USERS }          from '@/lib/auth/types';
 import { ApiError }           from '@/lib/fileAPI/apiCall';
 import { date, ms }           from '@/lib/utils/date';
 import { Log }                from '@/lib/utils/log';
@@ -543,7 +543,6 @@ export default function serverFileIO (appKey:string):AppFileIO {
          const now = new Date()
          const days:boolean[] = []
          const months:boolean[] = []
-// console.log(`pruning ${file} in dir '${dir}'`)
          const versions = fs.readDirSync(dir)
             // find the versions of `name`:
             .filter(file => file.indexOf(name)===0)

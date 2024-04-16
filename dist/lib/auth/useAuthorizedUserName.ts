@@ -1,5 +1,5 @@
 import { useSession }   from "next-auth/react";
-import { ALL_USERS }    from "./useUserRole";
+import { ALL_USERS }    from "./types";
 
 /**
  * provides the name of the user currently authorized via next-auth, 
