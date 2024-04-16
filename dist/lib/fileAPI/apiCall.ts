@@ -1,4 +1,4 @@
-import { Log }       from "@/lib/utils"
+import { Log }       from "@/lib/utils/log"
 
 const log = Log('apiCalls')
 

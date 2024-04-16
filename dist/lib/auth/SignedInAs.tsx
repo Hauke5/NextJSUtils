@@ -40,11 +40,3 @@ export function SignedInAs() {
       </div>
    </div>
 }
-
-
-// export function SignIn() {
-//    return <div className={styles.signIn}>
-//       <button onClick={() => signIn()}>Sign in</button>
-//    </div>
-// }
-

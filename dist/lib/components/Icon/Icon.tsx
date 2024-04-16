@@ -1,5 +1,5 @@
 import { MouseEvent }   from "react"
-import { BaseProps }    from '@/lib/apps/BaseProps'
+import { BaseProps }    from '@/lib/components/BaseProps'
 import styles           from "./Icon.module.scss"
 
 
