@@ -1,6 +1,6 @@
 {
    "name": "@hauke5/nextjs-utils",
-   "version": "1.0.8",
+   "version": "1.0.9",
    "description": "shared resources for NextJS apps",
    "author": {
       "name": "hauke5",
