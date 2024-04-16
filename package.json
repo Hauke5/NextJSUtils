@@ -19,12 +19,12 @@
    },
    "scripts": {},
    "dependencies": {
-      "@hauke5/utils": "^1",
-      "next": "^14.2.0",
+      "@mdi/js": "^7.4.47",
+      "next": "^14",
       "next-auth": "^4.24.7",
       "node": "^20.12.2",
-      "react": "^18.2.0",
-      "sass": "^1.75.0"
+      "react": "^18",
+      "sass": "^1"
    },
    "devDependencies": {
       "typescript": "^5",
