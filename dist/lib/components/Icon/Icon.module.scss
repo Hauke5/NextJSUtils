@@ -1,0 +1,25 @@
+.icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   // padding-top: 4px;
+   height:100%;
+   user-select: none;
+   &>div {
+      display: inline-block;
+      transform: translateY(-3px);
+      height:15px;
+   }
+   .pre {
+      padding: 0 3px 0 5px;
+   }
+   .post {
+      margin: 0 5px 0 5px;
+   }
+   svg {
+      // margin: auto 0;
+      margin: 1px 0 0 0;
+      // height:100%;
+   }
+}
+
