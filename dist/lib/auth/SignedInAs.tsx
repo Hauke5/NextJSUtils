@@ -3,9 +3,9 @@ import { signIn, signOut, useSession }
                         from 'next-auth/react'
 import { mdiAccountCog, mdiAccountGroup, mdiLogin, mdiLogout, mdiShieldAccount } 
                         from '@mdi/js'
+import { Icon }         from '@/lib/components/Icon'
 import { useUserRole }  from './useUserRole'
 import { ALL_USERS }    from './types'
-import { Icon }         from '../components/Icon'
 import styles           from './Auth.module.scss'
 
 

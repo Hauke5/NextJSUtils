@@ -6,9 +6,6 @@
       "name": "hauke5",
       "email": "helpfulscripts@gmail.com"
    },
-   "bin": {
-      "utils": "./dist/index.sh"
-   },
    "files": [
       "dist"
    ],
@@ -20,6 +17,7 @@
    "scripts": {},
    "dependencies": {
       "@mdi/js": "^7.4.47",
+      "@hauke5/utils": "^1",
       "next": "^14",
       "next-auth": "^4.24.7",
       "node": "^20.12.2",
