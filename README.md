@@ -1,7 +1,6 @@
 # NextJS Utils
-shared resources for NextJS apps
+shared resources for use with @hauke5 NextJS components and apps
 
 ## Installation
-`npx @hauke5/nextjs-utils@latest`
+`npm i @hauke5/nextjs-utils@latest`
 
-## Overview
