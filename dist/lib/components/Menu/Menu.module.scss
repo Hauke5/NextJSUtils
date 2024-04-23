@@ -1,0 +1,108 @@
+
+$radius: 8px;
+$disabledColor:   #888;
+$activeColor:     #ccccc4;
+
+.menuBar {
+   display:flex;
+   position: relative;
+   align-items: center;
+   width:auto;
+   font-size: 90%;
+   background-color:#eef;
+   &[theme='dark'] {
+      background: linear-gradient(to bottom, #888 0px, #000 15px, #000 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0)),
+                  linear-gradient(to top,    #444 0px, #000 10px, #000 40%, rgba(0,0,0,0) 60%, rgba(0,0,0,0));
+      color: #eee;
+      fill: #eee;
+      & div[menu-active='true'] {
+         background-color: #888;
+      }
+      & div:hover {
+         background-color: #aaa;
+      }
+   }
+   color: black;
+   z-index: 999;
+   &[menudir='menuHor'] {
+      flex-flow: row nowrap;
+      align-items: center;
+   }
+   &[menudir='menuVer'] {
+      position: absolute;
+      top: 1.5em;
+      height:min-content;
+      flex-flow: column nowrap;
+      align-items: start;
+      .menuItem {
+         width:100%;
+      }
+   }
+
+   .menuItem {
+      display:flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: 4px 5px;
+      width:auto;
+      white-space:nowrap; 
+      position: relative;
+      caret-color: transparent !important;
+      &:hover {
+         background-color: #ccc;
+      }
+      &>div {
+         padding:0;
+      }
+      .menuSpacer {
+         opacity: 0;
+      }
+      .menuLabel {
+         padding-top: 0;
+      }
+      &[menu-active='true'] {
+         background-color: $activeColor;
+      }
+      &[menu-disabled='true'] {
+         fill:    $disabledColor;
+         color:   $disabledColor;
+         &[theme='dark'] {
+            fill:    $disabledColor;
+            color:   $disabledColor;
+         }
+         filter:  none;
+         &:hover {
+            background-color: initial;
+         }
+      }
+   }
+
+   .menuVerSeparator { 
+      margin: 5px 2px 3px 0;
+      padding-left: 2px;
+      border-right: 1px solid #aaa; 
+      height: 1.4em;
+   }
+   .menuHorSeparator { 
+      border-bottom: 1px solid #aaa; 
+      width: 100%;
+   }   
+   .menuGroup {
+      display:flex;
+      flex-direction: row;
+      &>div {
+         &:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-right: 0;
+         }
+         &:not(:first-child) {
+            border-left: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: 0;
+         }
+      }
+   }
+}
+
