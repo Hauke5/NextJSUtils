@@ -11,11 +11,7 @@
       "type": "git",
       "url": "git+https://github.com/Hauke5/NextJSUtils.git"
    },
-   "scripts": {
-      "dev": "./node_modules/.bin/next dev -p 3010",
-      "build": "next build",
-      "start": "./node_modules/.bin/next start -p 3010"
-   },
+   "scripts": {},
    "dependencies": {
       "@mdi/js": "^7.4.47",
       "@hauke5/utils": "^1",
