@@ -6,9 +6,6 @@
       "name": "hauke5",
       "email": "helpfulscripts@gmail.com"
    },
-   "files": [
-      "dist"
-   ],
    "license": "MIT",
    "repository": {
       "type": "git",
